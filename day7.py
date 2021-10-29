@@ -4,7 +4,7 @@ workbook=xlrd.open_workbook(filename='2020.xlsx')
 #1.1计算总销售额
 for j in range(0,12):
 #第j月
-    table=workbook.sheet_by_index(0)#选择sheet
+    table=workbook.sheet_by_index(j)#选择sheet
 # rowd=table.row(0)#行
 # cold=table.col(0)#列
 # value=table.cell_value(0,0)#行列单元格
